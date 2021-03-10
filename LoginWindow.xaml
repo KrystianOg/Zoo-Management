@@ -1,0 +1,132 @@
+﻿<Window x:Class="Zoo_Management.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zoo_Management"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="LoginWindow" Height="410" Width="680" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid MouseDown="BorderMouseDown">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#515A61" Offset="1.1"/>
+                <GradientStop Color="#1B4C57" Offset="0.15"/>
+            </LinearGradientBrush>
+            
+        </Grid.Background>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Width="320" VerticalAlignment="Center" Margin="0 0 0 50">
+                <TextBlock x:Name="windowType" Text="Login" Margin="0" Foreground="White" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+                <Separator Margin="25 20 25 10" Height="5" Background="{StaticResource Apricot}" Opacity="0.7"/>
+
+                <Grid>
+                    <Grid.Resources>
+                        <Style TargetType="materialDesign:PackIcon">
+                            <Setter Property="Width" Value="32"/>
+                            <Setter Property="Height" Value="32"/>
+                            <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                        </Style>
+                        <Style TargetType="PasswordBox" BasedOn="{StaticResource MaterialDesignPasswordBox}">
+                            <Setter Property="Margin" Value="6"/>
+                            <Setter Property="Background" Value="{x:Null}"/>
+                            <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                            <Setter Property="Width" Value="250"/>
+                            <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="{StaticResource Apricot}"/>
+                        </Style>
+
+                        <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+                            <Setter Property="Margin" Value="6"/>
+                            <Setter Property="Background" Value="{x:Null}"/>
+                            <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                            <Setter Property="Width" Value="250"/>
+                            <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="{StaticResource Apricot}"/>
+                        </Style>
+                    </Grid.Resources>
+
+                    
+                    <Grid x:Name="LoginG" VerticalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition MaxHeight="48"/>
+                            <RowDefinition MaxHeight="48"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MaxWidth="200" Width="32"/>
+                            <ColumnDefinition MaxWidth="400"/>
+                        </Grid.ColumnDefinitions>
+
+                        <materialDesign:PackIcon Grid.Column="0" Grid.Row="0" Kind="Email"/>
+                        <TextBox Name="l_email" Grid.Column="1" Grid.Row="0"  materialDesign:HintAssist.Hint="Enter e-mail" CaretBrush="{StaticResource DarkTeal}" SelectionBrush="{StaticResource DarkTeal}"/>
+
+                        <materialDesign:PackIcon Grid.Column="0" Grid.Row="1" Kind="Lock"/>
+                        <PasswordBox Name="l_pass" Grid.Column="1" Grid.Row="1" materialDesign:TextFieldAssist.UnderlineBrush="{StaticResource Apricot}" materialDesign:HintAssist.Hint="Enter password"  CaretBrush="{StaticResource DarkTeal}" SelectionBrush="{StaticResource DarkTeal}"/>
+                    </Grid>
+
+                    <Grid x:Name="RegisterG" Visibility="Hidden" VerticalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition MaxHeight="48"/>
+                            <RowDefinition MaxHeight="48"/>
+                            <RowDefinition MaxHeight="48"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MaxWidth="200" Width="32"/>
+                            <ColumnDefinition MaxWidth="400"/>
+                        </Grid.ColumnDefinitions>
+
+                        <materialDesign:PackIcon Grid.Column="0" Grid.Row="0" Kind="Email"/>
+                        <TextBox Name="r_email" Grid.Column="1" Grid.Row="0" materialDesign:HintAssist.Hint="Enter e-mail" CaretBrush="{StaticResource DarkTeal}" SelectionBrush="{StaticResource DarkTeal}"/>
+
+                        <materialDesign:PackIcon Grid.Column="0" Grid.Row="1" Kind="Lock"/>
+                        <PasswordBox Name="r_pass" Grid.Column="1" Grid.Row="1" materialDesign:HintAssist.Hint="Enter password" CaretBrush="{StaticResource DarkTeal}" SelectionBrush="{StaticResource DarkTeal}"/>
+
+                        <materialDesign:PackIcon Grid.Column="0" Grid.Row="2" Kind="Lock"/>
+                        <PasswordBox Name="r_cpass" Grid.Column="1" Grid.Row="2" materialDesign:HintAssist.Hint="Confirm password" CaretBrush="{StaticResource DarkTeal}" SelectionBrush="{StaticResource DarkTeal}"/>
+
+                    </Grid>
+                </Grid>
+
+                <Separator Margin="25 15" Height="3" Background="{StaticResource Apricot}" Opacity="0.7" MaxWidth="512"/>
+                
+                <Grid HorizontalAlignment="Center">
+                    <Grid.Resources>
+                        <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
+                            <Setter Property="Width" Value="100"/>
+                            <Setter Property="Height" Value="32"/>
+                            <Setter Property="Background" Value="{x:Null}"/>
+                            <Setter Property="materialDesign:ButtonAssist.CornerRadius" Value="10"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource Apricot}"/>
+                            <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                        </Style>
+                    </Grid.Resources>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" Grid.Row="1" ToolTip="Login" Click="Login" Content="Login" x:Name="btnl_Login"/>
+                    <Button Grid.Column="1" Grid.Row="1" ToolTip="Not a member?" Click="ChangeType" Content="Register" x:Name="btnl_Register"/>
+
+
+                    <Button Grid.Column="0" Grid.Row="1" ToolTip="Register" Click="Register" Content="Register" Visibility="Hidden" x:Name="btnr_Login"/>
+                    <Button Grid.Column="1" Grid.Row="1" ToolTip="Already a member?" Click="ChangeType" Content="Login" Visibility="Hidden" x:Name="btnr_Register"/>
+                </Grid>
+            
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Image Source="Images/koliber_a_small.png" Stretch="Uniform"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Height="48" Width="48" Margin="4" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}" ToolTip="Close" Click="Exit" BorderBrush="{x:Null}">
+            <materialDesign:PackIcon Kind="Close" Foreground="{StaticResource DefaultWhite}" Width="36" Height="36"/>
+        </Button>
+    </Grid>
+</Window>

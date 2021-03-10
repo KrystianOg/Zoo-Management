@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\Zoo-Management\obj\Debug\
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\
 Zoo_Management
 none
 false
 DEBUG;TRACE
-C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\Zoo-Management\App.xaml
-11151548125
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\App.xaml
+3-623454845
 
-61434861427
-13-1505183044
-MainWindow.xaml;
+8816410708
+15-998372446
+Controls\MenuBar.xaml;LoginWindow.xaml;Menu.xaml;
 
-True
+False
 
