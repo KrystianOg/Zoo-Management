@@ -20,9 +20,18 @@ namespace Zoo_Management.Controls
     /// </summary>
     public partial class MenuBar : UserControl
     {
+        private Window window;
+
         public MenuBar()
         {
             InitializeComponent();
         }
+
+        public MenuBar(Window window)
+        {
+            this.window = window;
+        }
+
+
     }
 }

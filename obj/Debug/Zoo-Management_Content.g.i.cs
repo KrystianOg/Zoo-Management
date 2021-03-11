@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/koliber_a_small.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/koliber_icon.png")]
 
 

@@ -5,10 +5,41 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Zoo_Management.Controls"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
     <DockPanel Background="{StaticResource DarkTeal}" Height="26">
+
+        <DockPanel.Resources>
+            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedLightButton}">
+                <Setter Property="Height" Value="26"/>
+                <Setter Property="Background" Value="{x:Null}"/>
+                <Setter Property="BorderBrush" Value="{x:Null}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Width" Value="26"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Margin" Value="5 0"/>
+            </Style>
+            <Style TargetType="materialDesign:PackIcon">
+                <Setter Property="Height" Value="26"/>
+                <Setter Property="Width" Value="26"/>
+                <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+
+            </Style>
+            
+        </DockPanel.Resources>
         
+        <Image DockPanel.Dock="Left" Source="/Images/koliber_icon.png" Stretch="Uniform" Height="24" Margin="1"/>
+
+        <Button x:Name="Exit" DockPanel.Dock="Right">
+            <materialDesign:PackIcon Kind="WindowClose"/>
+        </Button>
+        <Button x:Name="Maximize" DockPanel.Dock="Right">
+            <materialDesign:PackIcon Kind="WindowMaximize"/>
+        </Button>
+        <Button x:Name="Minimize" DockPanel.Dock="Right">
+            <materialDesign:PackIcon Kind="WindowMinimize"/>
+        </Button>
+
+        <Rectangle Stroke="Transparent"/>
         
     </DockPanel>
 </UserControl>
