@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Zoo_Management.CS;
 
 namespace Zoo_Management.Controls
 {
@@ -20,18 +21,34 @@ namespace Zoo_Management.Controls
     /// </summary>
     public partial class MenuBar : UserControl
     {
-        private Window window;
 
         public MenuBar()
         {
             InitializeComponent();
         }
 
-        public MenuBar(Window window)
+        private void ExitClick(object sender,RoutedEventArgs e)
         {
-            this.window = window;
+            Application.Current.Shutdown();
         }
 
+        private void MinimizeClick(object sender,RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
 
+        private void MaximizeClick(object sender,RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Normal;
+                Maximize.Kind = MaterialDesignThemes.Wpf.PackIconKind.Fullscreen;
+            }
+            else
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+                Maximize.Kind = MaterialDesignThemes.Wpf.PackIconKind.FullscreenExit;
+            }
+        }
     }
 }

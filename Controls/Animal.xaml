@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Zoo_Management.Controls.Animal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Zoo_Management.Controls"
+             mc:Ignorable="d">
+    <StackPanel HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="36" >
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="TextAlignment" Value="Center"/>
+                </Style>
+                <Style TargetType="Rectangle">
+                    <Setter Property="Fill" Value="{StaticResource Rust}"/>
+                    <Setter Property="Width" Value="2"/>
+                    <Setter Property="Margin" Value="5 0"/>
+                    <Setter Property="Height" Value="24"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+            </StackPanel.Resources>
+            
+            <TextBlock x:Name="Name" Text="Animal name" Width="160" TextAlignment="Left"/>
+            <Rectangle/>
+            <TextBlock x:Name="Family" Text="Family" Width="108"/>
+            <Rectangle/>
+            <TextBlock x:Name="Weight" Text="900 kg" Width="48"/>
+            <Rectangle/>
+            <TextBlock x:Name="SectorID" Text="A5" Width="20"/>
+            <Rectangle/>
+            <TextBlock x:Name="FoodAmount" Text="36 kg" Width="36"/>
+            <Rectangle/>
+
+            <Button Click="Feed" Background="{x:Null}" BorderBrush="{StaticResource Apricot}">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="FoodDrumstick" Width="24" Height="24"/>
+                    <TextBlock VerticalAlignment="Center" Margin="10 0 0 0" Text="FEED"/>
+                </StackPanel>
+            </Button>
+
+            <Rectangle/>
+
+            <Button Width="26" Click="Edit" Background="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionButton}" BorderBrush="{x:Null}" Height="32">
+                <materialDesign:PackIcon Kind="Pencil" Width="24" Height="24"/>
+            </Button>
+        </StackPanel>
+
+        <Separator Margin="20 2" Height="2" Background="{StaticResource Apricot}"/>
+    </StackPanel>
+    
+    
+</UserControl>

@@ -29,17 +29,16 @@
         
         <Image DockPanel.Dock="Left" Source="/Images/koliber_icon.png" Stretch="Uniform" Height="24" Margin="1"/>
 
-        <Button x:Name="Exit" DockPanel.Dock="Right">
+        <Button DockPanel.Dock="Right" Click="ExitClick">
             <materialDesign:PackIcon Kind="WindowClose"/>
         </Button>
-        <Button x:Name="Maximize" DockPanel.Dock="Right">
-            <materialDesign:PackIcon Kind="WindowMaximize"/>
+        <Button DockPanel.Dock="Right" Click="MaximizeClick">
+            <materialDesign:PackIcon x:Name="Maximize" Kind="Fullscreen"/>
         </Button>
-        <Button x:Name="Minimize" DockPanel.Dock="Right">
+        <Button DockPanel.Dock="Right" Click="MinimizeClick">
             <materialDesign:PackIcon Kind="WindowMinimize"/>
         </Button>
 
         <Rectangle Stroke="Transparent"/>
-        
     </DockPanel>
 </UserControl>

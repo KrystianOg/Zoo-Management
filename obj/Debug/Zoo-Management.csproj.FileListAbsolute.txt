@@ -24,3 +24,16 @@ C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\bin\Debug\MaterialDesignTh
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Zoo-Management.csproj.CopyComplete
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Menu.g.cs
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Menu.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\StoragePanel.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\AccountPanel.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\AnimalsPanel.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\DeliveryPanel.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\SettingsPanel.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\AccountPanel.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\AnimalsPanel.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\DeliveryPanel.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\SettingsPanel.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\StoragePanel.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\Animal.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\Animal.baml

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\App.xaml
-3-623454845
+9833732009
 
-71658770075
+15647342999
 15-998372446
-Controls\MenuBar.xaml;LoginWindow.xaml;Menu.xaml;
+Controls\MenuBar.xaml;Controls\Animal.xaml;Panels\AccountPanel.xaml;Panels\AnimalsPanel.xaml;Panels\DeliveryPanel.xaml;Panels\SettingsPanel.xaml;Panels\StoragePanel.xaml;LoginWindow.xaml;Menu.xaml;
 
 False
 
