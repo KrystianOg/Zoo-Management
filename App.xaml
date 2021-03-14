@@ -2,8 +2,26 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Zoo_Management"
-             StartupUri="MainWindow.xaml">
+             StartupUri="LoginWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="Text" Color="#DADADA"/>
+            <SolidColorBrush x:Key="DefaultWhite" Color="White"/>
+            <!-- Shades of blue -->
+            <SolidColorBrush x:Key="LightSky" Color="#4C99B0"/>
+            <SolidColorBrush x:Key="Teal" Color="#1B4C57"/>
+            <SolidColorBrush x:Key="DarkTeal" Color="#082625"/>
+            <!-- Shades of orange & brown -->
+            <SolidColorBrush x:Key="Apricot" Color="#E38638"/>
+            <SolidColorBrush x:Key="Rust" Color="#794118"/>
+            <SolidColorBrush x:Key="Seal" Color="#532406"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
