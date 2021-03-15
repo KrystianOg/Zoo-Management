@@ -22,7 +22,9 @@
                     <Setter Property="VerticalAlignment" Value="Center"/>
                 </Style>
             </StackPanel.Resources>
-            
+
+            <local:DefCheckBox/>
+            <Rectangle/>
             <TextBlock x:Name="Name" Text="Animal name" Width="160" TextAlignment="Left"/>
             <Rectangle/>
             <TextBlock x:Name="Family" Text="Family" Width="108"/>
@@ -34,7 +36,7 @@
             <TextBlock x:Name="FoodAmount" Text="36 kg" Width="36"/>
             <Rectangle/>
 
-            <Button Click="Feed" Background="{x:Null}" BorderBrush="{StaticResource Apricot}">
+            <Button Click="Feed" Background="{x:Null}" BorderBrush="{StaticResource Apricot}" Style="{StaticResource MaterialDesignRaisedButton}">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <materialDesign:PackIcon Kind="FoodDrumstick" Width="24" Height="24"/>
                     <TextBlock VerticalAlignment="Center" Margin="10 0 0 0" Text="FEED"/>

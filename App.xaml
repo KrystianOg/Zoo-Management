@@ -14,6 +14,8 @@
 
             <SolidColorBrush x:Key="Text" Color="#DADADA"/>
             <SolidColorBrush x:Key="DefaultWhite" Color="White"/>
+            <Color x:Key="ColorDefaultWhite">White</Color>
+            
             <!-- Shades of blue -->
             <SolidColorBrush x:Key="LightSky" Color="#4C99B0"/>
             <SolidColorBrush x:Key="Teal" Color="#1B4C57"/>
@@ -22,6 +24,11 @@
             <SolidColorBrush x:Key="Apricot" Color="#E38638"/>
             <SolidColorBrush x:Key="Rust" Color="#794118"/>
             <SolidColorBrush x:Key="Seal" Color="#532406"/>
+
+            <Color x:Key="ColorApricot">#E38638</Color>
+
+            <!-- other colors -->
+            <SolidColorBrush x:Key="Shadow" Color="#11000000"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
