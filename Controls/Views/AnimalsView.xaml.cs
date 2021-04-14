@@ -13,28 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Zoo_Management
+namespace Zoo_Management.Controls.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AnimalsView.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class AnimalsView : UserControl
     {
-        public Menu()
+        public AnimalsView()
         {
             InitializeComponent();
+            
+            for (int i = 0; i < 50; i++)
+            {
+                Animal animal = new Animal("Elephant", "Elephanty", 3, 5000, 500, "trawa");
+                Animals.Children.Add(animal);
+            }
         }
 
-        private void UnfoldMenuBar(object sender, RoutedEventArgs g)
-        {
-
-
-        }
-
-        private void AnimalsView_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
-
 }

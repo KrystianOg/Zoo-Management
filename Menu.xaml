@@ -4,9 +4,76 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zoo_Management"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="MainWindow" Height="600" Width="970" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        xmlns:uc="clr-namespace:Zoo_Management.Controls.Views">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#515A61" Offset="1.1"/>
+                <GradientStop Color="#1B4C57" Offset="0.15"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+
+            <Grid.Resources>
+                <Style TargetType="materialDesign:PackIcon">
+                    <Setter Property="Width" Value="48"/>
+                    <Setter Property="Height" Value="48"/>
+                    <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                </Style>
+                <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFloatingActionButton}">
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="Width" Value="48"/>
+                    <Setter Property="Height" Value="48"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="BorderBrush" Value="{x:Null}"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                </Style>
+            </Grid.Resources>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+            <Button Grid.Column="0" Grid.Row="0" Click="UnfoldMenuBar" Margin="0 0 0 60">
+                <materialDesign:PackIcon Kind="Menu"/>
+            </Button>
+
+            <Button Grid.Column="0" Grid.Row="1" Click="UnfoldMenuBar">
+                <materialDesign:PackIcon Kind="Pets"/>
+            </Button>
+
+            <Button Grid.Column="0" Grid.Row="2" Click="UnfoldMenuBar">
+                <materialDesign:PackIcon Kind="PermIdentity"/>
+            </Button>
+
+            <Button Grid.Column="0" Grid.Row="3" Click="UnfoldMenuBar">
+                <materialDesign:PackIcon Kind="Meat"/>
+            </Button>
+
+            <Button Grid.Column="0" Grid.Row="4" Click="UnfoldMenuBar">
+                <materialDesign:PackIcon Kind="Truck"/>
+            </Button>
+
+        </Grid>
+        
+        
+        <uc:AnimalsView Grid.Column="1"/>
+        
         
     </Grid>
 </Window>
