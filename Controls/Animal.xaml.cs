@@ -20,7 +20,7 @@ namespace Zoo_Management.Controls
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
-    public partial class Animal : UserControl, IFeedAnimal
+    public partial class Animal : UserControl
     {
         public DateTime LastFeedTime { get ; set ; }
 
@@ -35,6 +35,7 @@ namespace Zoo_Management.Controls
 
         public Animal(string animalID,string foodID, string sectorID,string name, string family,string description,double weight,double foodAmount)
         {
+            InitializeComponent();
             AnimalID = animalID;
             FoodID = foodID;
             Description = description;
@@ -46,19 +47,19 @@ namespace Zoo_Management.Controls
             FoodAmount.Text = foodAmount.ToString();
         }
 
-        void IFeedAnimal.Feed()
+        private void Edit(object sender,RoutedEventArgs e)
         {
-
+            //open edit window 
         }
 
         private void Feed(object sender,RoutedEventArgs e)
         {
-
+            //set that animal was feed in db
         }
 
-        private void Edit(object sender,RoutedEventArgs e)
+        private void Delete(object sender,RoutedEventArgs e)
         {
-
+            //delete object and then reload animals list
         }
     }
 }

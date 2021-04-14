@@ -32,7 +32,6 @@
                 
                 <Style TargetType="materialDesign:PackIcon">
                     <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
-
                     <Setter Property="Width" Value="46"/>
                     <Setter Property="Height" Value="46"/>
                 </Style>
@@ -73,14 +72,30 @@
             </StackPanel>
         </Grid>
 
-        <CustomPanels:AccountPanel x:Name="AccountPanel"/>
-        <CustomPanels:AnimalsPanel x:Name="AnimalsPanel"/>
-        <CustomPanels:DeliveryPanel x:Name="DeliveryPanel"/>
-        <CustomPanels:StoragePanel x:Name="StoragePanel"/>
-        <CustomPanels:SettingsPanel x:Name="SettingsPanel"/>
-
+        
         <Grid DockPanel.Dock="Top">
+            <Grid.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="{StaticResource Shadow}"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource Apricot}"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="Width" Value="42"/>
+                    <Setter Property="Height" Value="42"/>
+                    <Setter Property="Margin" Value="5 0"/>
+                </Style>
+
+                <Style TargetType="materialDesign:PackIcon">
+                    <Setter Property="Foreground" Value="{StaticResource DefaultWhite}"/>
+                    <Setter Property="Width" Value="32"/>
+                    <Setter Property="Height" Value="32"/>
+                </Style>
+            </Grid.Resources>
             
+            <CustomPanels:AccountPanel x:Name="AccountPanel" Visibility="Hidden"/>
+            <CustomPanels:AnimalsPanel x:Name="AnimalsPanel" Visibility="Visible"/>
+            <CustomPanels:DeliveryPanel x:Name="DeliveryPanel" Visibility="Hidden"/>
+            <CustomPanels:StoragePanel x:Name="StoragePanel" Visibility="Hidden"/>
+            <CustomPanels:SettingsPanel x:Name="SettingsPanel" Visibility="Hidden"/>
         </Grid>
     </DockPanel>
 </Window>

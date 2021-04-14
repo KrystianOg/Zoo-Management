@@ -23,6 +23,18 @@ namespace Zoo_Management.Controls.Panels
         public AnimalsPanel()
         {
             InitializeComponent();
+
+
+            for(int i = 0; i < 40; i++)
+            {
+                //AddAnimal(new Animal("aaaaaa", "meat 4E", "4D", "elephant", "elephanty", "something about elephants", 3456.2, 203.5));
+                AddAnimal(new Animal());
+            }
+        }
+
+        public void AddAnimal(Animal animal)
+        {
+            AnimalsStackPanel.Children.Add(animal);
         }
     }
 }

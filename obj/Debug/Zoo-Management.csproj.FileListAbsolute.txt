@@ -37,3 +37,5 @@ C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\SettingsP
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Panels\StoragePanel.baml
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\Animal.g.cs
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\Animal.baml
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\DefCheckBox.g.cs
+C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\obj\Debug\Controls\DefCheckBox.baml
