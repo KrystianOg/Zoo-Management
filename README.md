@@ -35,12 +35,28 @@ PK | Animal_ID | CHAR(36)
 --- | name | VARCHAR2(32)
 --- | weight | DOUBLE
 
---- | Food| ---
+--- | Food | ---
 --- | --- | --- 
 PK | Food_ID | CHAR(36)
 --- | Food_type | VARCHAR(64)
 --- | price | DOUBLE
 --- | expiry_date | DATETIME
+
+--- | Delivery | ---
+--- | --- | --- 
+PK | Delivery_ID | INT
+FK | Food_ID | CHAR(36)
+--- | delvery_date | DATETIME
+FK | collected_by | CHAR(36)
+
+--- | Delivery_items | ---
+--- | --- | --- 
+PK | Item_ID | CHAR(36)
+FK | Delivery_ID | CHAR(36)
+--- | amount | INT
+--- | checked | BOOLEAN
+
+
 
 --- | Storage | ---
 --- | --- | --- 
