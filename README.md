@@ -6,11 +6,8 @@ Database tables:
 --- | Employees | ---
 --- | --- | --- 
 PK | Employee_ID | CHAR(36)
---- | --- | --- 
 --- | name | VARCHAR2(32)
---- | --- | --- 
 --- | last_name | VARCHAR2(32)
---- | --- | --- 
 --- | birth_date | DATE
 --- | --- | --- 
 FK | position_name | VARCHAR2(255)
