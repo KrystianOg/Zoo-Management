@@ -3,7 +3,7 @@ Wroclaw University of Technology BD1 course (Data Bases 1) project. It contains 
 
 Database tables:
 
-| Employees |
+ Employees 
 --- | --- | --- 
 PK | Employee_ID | CHAR(36)
 --- | --- | --- 
