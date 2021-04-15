@@ -6,4 +6,5 @@ Database tables:
 | Employees |
 --- | --- | --- 
 PK | Employee_ID | CHAR(36)
+--- | --- | --- 
 --- | Name | VARCHAR2(32)
