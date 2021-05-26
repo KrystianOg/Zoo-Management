@@ -20,8 +20,6 @@ namespace Zoo_Management
     /// </summary>
     public partial class Menu : Window
     {
-        private bool MenubarOpened = false;
-
         private IDictionary<Button, Panel> buttonPanelMap = new Dictionary<Button, Panel>();
         private IDictionary<Panel, MaterialDesignThemes.Wpf.PackIcon> panelIconMap = new Dictionary<Panel, MaterialDesignThemes.Wpf.PackIcon>();
         private IDictionary<Panel, bool> privileges = new Dictionary<Panel, bool>();
@@ -32,7 +30,9 @@ namespace Zoo_Management
             InitializeComponent();
 
             Application.Current.MainWindow = this;
-            MenuIcons.Visibility = Visibility.Hidden;
+            MenuIcons.Visibility = Visibility.Visible;
+
+            //hide functions 
 
             //button panel map
             buttonPanelMap.Add(AccountButton, Panel.Account);
@@ -67,21 +67,6 @@ namespace Zoo_Management
                 DragMove();
             }
             catch (InvalidOperationException) { }
-        }
-
-        private void OpenMenu(object sender,RoutedEventArgs e)
-        {
-            if (MenubarOpened)
-            {
-                //Menubar.Width = 48;
-                MenuIcons.Visibility = Visibility.Hidden;
-            } else
-            {
-                //Menubar.Width = 128;
-                MenuIcons.Visibility = Visibility.Visible;
-             
-            }
-            MenubarOpened = !MenubarOpened;
         }
 
         private void SetUsedPanel(object sender,RoutedEventArgs e)

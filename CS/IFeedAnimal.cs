@@ -11,7 +11,7 @@ namespace Zoo_Management.CS
     {
         DateTime LastFeedTime { get; set; }
 
-        void Feed(object sender, RoutedEventArgs e); 
+        //void Feed(object sender, RoutedEventArgs e); 
     }
 
 }

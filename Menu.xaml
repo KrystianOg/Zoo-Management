@@ -43,10 +43,6 @@
             <Grid.Triggers>
                 
             </Grid.Triggers>
-            
-            <Button x:Name="OpenMenuButton" Grid.Row="0" Click="OpenMenu">
-                <materialDesign:PackIcon Kind="Menu"/>
-            </Button>
 
             <StackPanel x:Name="MenuIcons" Grid.Row="1" VerticalAlignment="Center">
                 <Button x:Name="AccountButton" Click="SetUsedPanel">

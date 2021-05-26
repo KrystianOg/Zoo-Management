@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\tailo\Source\Repos\KrystianOg\Zoo-Management\App.xaml
-10769418742
+11-1713438396
 
-1730911503
-15-998372446
-Controls\DefCheckBox.xaml;Controls\MenuBar.xaml;Controls\Animal.xaml;Panels\AccountPanel.xaml;Panels\AnimalsPanel.xaml;Panels\DeliveryPanel.xaml;Panels\SettingsPanel.xaml;Panels\StoragePanel.xaml;LoginWindow.xaml;Menu.xaml;
+241000966078
+122-71442922
+Controls\DefCheckBox.xaml;Controls\MenuBar.xaml;Controls\Animal.xaml;Controls\UserData.xaml;Panels\AccountPanel.xaml;Panels\AnimalsPanel.xaml;Panels\DeliveryPanel.xaml;Panels\SettingsPanel.xaml;Panels\StoragePanel.xaml;LoginWindow.xaml;Menu.xaml;
 
 True
 
