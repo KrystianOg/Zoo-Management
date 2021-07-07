@@ -22,9 +22,11 @@ namespace Zoo_Management.Controls
     /// </summary>
     public partial class Animal : UserControl
     {
+        bool Editable;
         public DateTime LastFeedTime { get ; set ; }
 
         private string AnimalID;
+        private string AnimalTypeID;
         private string FoodID;
         private string Description;
 
@@ -49,11 +51,22 @@ namespace Zoo_Management.Controls
 
         private void Edit(object sender,RoutedEventArgs e)
         {
+            Editable = !Editable;
+            Console.WriteLine($"Is editable: {Editable}");
+
             //open edit window 
         }
 
         private void Feed(object sender,RoutedEventArgs e)
         {
+            if (LastFeedTime < DateTime.Now.AddHours(6))
+            {
+                LastFeedTime = DateTime.Now;
+            } else
+            {
+                Console.WriteLine($"Animal '{Name.Text}' with ID '{AnimalID}' recently fed.");
+            }
+
             //set that animal was feed in db
         }
 

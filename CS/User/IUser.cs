@@ -11,7 +11,7 @@ namespace Zoo_Management.CS.User
     interface IUser
     {
         bool Login(string email,string password);
-        void Register();
+        void Register(string email,string password);
         void RemoveUser();
         void EditUserDetails();
         void EditUserPrivileges();

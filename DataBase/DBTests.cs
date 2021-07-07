@@ -14,16 +14,40 @@ namespace Zoo_Management.DataBase
     public class DBTests
     {
         [TestMethod]
+        public void CanConnectToOracleDB_True()
+        {
+            var DB = new DataBase();
+
+            var result=DB.Connect();
+            
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
         public void TryUserLogin_User_True()
         {
             //AAA
             //arrange
             var DB = new DataBase();
+            DB.Connect();
 
             //act
-            bool result=DB.Login();
+            //bool result=DB.Login();
             //assert
-            Assert.IsTrue(result);
+            //Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TryCreateOrder_User_OrderId()
+        {
+            var DB = new DataBase();
+            DB.Connect();
+
+            //
+            var res=DB.CreateOrder();
+            //
+            Assert.IsTrue(res.Length>0&&!res.Equals("null"));
+
         }
     }
 
